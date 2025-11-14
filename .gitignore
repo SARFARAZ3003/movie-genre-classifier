@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual env
+venv/
+.venv/
+
+# Models
+*.joblib
+*.pkl
+
+# Logs
+*.log
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+
+# Environment files
+.env
