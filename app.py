@@ -4,7 +4,7 @@
 import os, gradio as gr, pandas as pd
 from model.predict import MovieGenrePredictor
 
-MODEL_PATH = os.getenv("MODEL_PATH", "model\model.joblib")
+MODEL_PATH = os.getenv("MODEL_PATH", os.path.join("model", "model.joblib"))
 _predictor = MovieGenrePredictor(model_path=MODEL_PATH)
 
 def infer(text:str, k: int=3):
